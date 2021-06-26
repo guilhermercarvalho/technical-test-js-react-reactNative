@@ -1,0 +1,34 @@
+{
+  "name": "React Challenge",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "runServices": [
+    "app"
+  ],
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.profiles.linux": {
+      "zsh": {
+        "path": "zsh"
+      }
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "eslint.validate": [
+      "javascript"
+    ],
+    "editor.snippetSuggestions": "inline",
+    "[javascript]": {
+      "editor.suggest.showSnippets": true,
+      "editor.snippetSuggestions": "top"
+    }
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "xabikos.JavaScriptSnippets",
+  ],
+  "postCreateCommand": "zsh /workspace/.devcontainer/script/app_ohmyzsh.sh",
+  "remoteUser": "node",
+  "shutdownAction": "stopCompose",
+}
