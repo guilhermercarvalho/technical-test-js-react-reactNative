@@ -30,7 +30,7 @@ function Navigation() {
             <Link to="/cart">
               <Nav.Item>
                 <img
-                  src={`${process.env.PUBLIC_URL}/cart-icon.svg`}
+                  src="./cart-icon.svg"
                   width="28px"
                   height="28px"
                   alt="Carrinho"

@@ -19,10 +19,7 @@ export default function Product({ product }) {
     <div className="cards_landscape_wrap-2">
       <div className={product.plataform}>
         <Card border={border} style={{ width: '18rem' }}>
-          <Card.Img
-            variant="top"
-            src={`${process.env.PUBLIC_URL}/images/${product.image}`}
-          />
+          <Card.Img variant="top" src={`./images/${product.image}`} />
           <div className="text-center">Score: {product.score}</div>
           <Card.Body>
             <Card.Subtitle className="text-center">

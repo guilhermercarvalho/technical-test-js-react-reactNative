@@ -45,7 +45,6 @@ export default function SearchScreen() {
       query.set('price', boolPrice ? 'true' : 'false')
       query.set('orderBy', orderAscDesc)
       history.push({
-        pathname: window.location.pathname,
         search: query.toString(),
       })
     } else if (boolAlpha) {
@@ -54,7 +53,6 @@ export default function SearchScreen() {
       query.set('price', boolPrice ? 'true' : 'false')
       query.set('orderBy', orderAscDesc)
       history.push({
-        pathname: window.location.pathname,
         search: query.toString(),
       })
     } else if (boolPrice) {
@@ -63,7 +61,6 @@ export default function SearchScreen() {
       query.set('price', boolPrice ? 'true' : 'false')
       query.set('orderBy', orderAscDesc)
       history.push({
-        pathname: window.location.pathname,
         search: query.toString(),
       })
     }
@@ -117,7 +114,6 @@ export default function SearchScreen() {
     setBoolPrice(false)
     query.set('name', '')
     history.push({
-      pathname: window.location.pathname,
       search: '?name=',
     })
   }

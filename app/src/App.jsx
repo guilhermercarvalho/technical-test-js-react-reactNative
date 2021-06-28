@@ -14,7 +14,7 @@ import ErrorPage from './pages/ErrorPage'
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div>
         <header>
           <Navigation />
