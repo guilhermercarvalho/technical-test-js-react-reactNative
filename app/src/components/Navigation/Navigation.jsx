@@ -1,7 +1,8 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import SearchBox from '../SearchBox'
 
 function Navigation() {
   const cartSelector = useSelector((state) => state.cart)
@@ -21,6 +22,10 @@ function Navigation() {
           id="responsive-navbar-nav"
           className="justify-content-end"
         >
+          <Container className="justify-content-center">
+            <Route render={({ history }) => <SearchBox history={history} />} />
+          </Container>
+
           <Nav className="me-auto">
             <Link to="/cart">
               <Nav.Item>
