@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage'
 import ProductPage from './pages/ProductPage'
 import CartPage from './pages/CartPage'
 import ShippingAddressPage from './pages/ShippingAddressPage'
+import PlaceOrderPage from './pages/PlaceOrderPage'
 
 function App() {
   return (
@@ -18,6 +19,12 @@ function App() {
 
         <main>
           <Switch>
+            <Route
+              exact
+              sensitive
+              path="/placeorder"
+              component={PlaceOrderPage}
+            />
             <Route
               exact
               sensitive

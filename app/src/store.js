@@ -6,6 +6,7 @@ import {
   productListReducer,
 } from './reducers/productReducers'
 import cartReducer from './reducers/cartReducers'
+import orderReducer from './reducers/orderReducers'
 
 const initialState = {
   cart: {
@@ -16,12 +17,18 @@ const initialState = {
       ? JSON.parse(localStorage.getItem('shippingAddress'))
       : {},
   },
+  order: {
+    orders: localStorage.getItem('orders')
+      ? JSON.parse(localStorage.getItem('orders'))
+      : [],
+  },
 }
 
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailReducer,
   cart: cartReducer,
+  order: orderReducer,
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose

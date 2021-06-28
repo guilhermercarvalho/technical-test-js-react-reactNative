@@ -4,6 +4,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
+import { useHistory } from 'react-router-dom'
 import * as yup from 'yup'
 import CheckoutSteps from '../components/CheckoutSteps'
 import { saveShippingAddress } from '../actions/cartActions'
@@ -52,6 +53,8 @@ export default function ShippingAddressScreen() {
     },
   })
 
+  const history = useHistory()
+
   const [street, setStreet] = useState('')
   const [district, setDistrict] = useState('')
   const [city, setCity] = useState('')
@@ -93,7 +96,7 @@ export default function ShippingAddressScreen() {
         },
       })
     )
-    // redireciona para página do pedido
+    history.push('/placeorder')
   }
 
   return (
