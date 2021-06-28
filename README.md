@@ -1,10 +1,10 @@
-# Desafia React
+# Desafio React
 
 Desafio técnico para vaga Desenvolvedor Javascript + React + React Native
 
 ## Objetivo
 
-Construir a interface ce um ecommerce de games utilizando ReactJS.
+Construir a interface de um ecommerce de games utilizando ReactJS.
 
 ### Requisitos
 
@@ -46,7 +46,7 @@ Como o projeto não faz uso de banco de dados todas os dados da interação do u
 
 ### Instalação e Execução
 
-É possível executar a aplicaçãom em ambientes com NodeJS, Yarn ou NPM instalados
+É possível executar a aplicação em ambientes com NodeJS, Yarn ou NPM instalados
 
 - Iniciando o Servidor Front-End
 
