@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/technical-test-js-react-reactNative/static/css/main.328f5c33.chunk.css",
-    "main.js": "/technical-test-js-react-reactNative/static/js/main.fb8cd1ac.chunk.js",
-    "main.js.map": "/technical-test-js-react-reactNative/static/js/main.fb8cd1ac.chunk.js.map",
+    "main.js": "/technical-test-js-react-reactNative/static/js/main.22964ae2.chunk.js",
+    "main.js.map": "/technical-test-js-react-reactNative/static/js/main.22964ae2.chunk.js.map",
     "runtime-main.js": "/technical-test-js-react-reactNative/static/js/runtime-main.01569e87.js",
     "runtime-main.js.map": "/technical-test-js-react-reactNative/static/js/runtime-main.01569e87.js.map",
-    "static/js/2.117c5b9d.chunk.js": "/technical-test-js-react-reactNative/static/js/2.117c5b9d.chunk.js",
-    "static/js/2.117c5b9d.chunk.js.map": "/technical-test-js-react-reactNative/static/js/2.117c5b9d.chunk.js.map",
+    "static/js/2.39f840ff.chunk.js": "/technical-test-js-react-reactNative/static/js/2.39f840ff.chunk.js",
+    "static/js/2.39f840ff.chunk.js.map": "/technical-test-js-react-reactNative/static/js/2.39f840ff.chunk.js.map",
     "index.html": "/technical-test-js-react-reactNative/index.html",
     "static/css/main.328f5c33.chunk.css.map": "/technical-test-js-react-reactNative/static/css/main.328f5c33.chunk.css.map",
-    "static/js/2.117c5b9d.chunk.js.LICENSE.txt": "/technical-test-js-react-reactNative/static/js/2.117c5b9d.chunk.js.LICENSE.txt"
+    "static/js/2.39f840ff.chunk.js.LICENSE.txt": "/technical-test-js-react-reactNative/static/js/2.39f840ff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.01569e87.js",
-    "static/js/2.117c5b9d.chunk.js",
+    "static/js/2.39f840ff.chunk.js",
     "static/css/main.328f5c33.chunk.css",
-    "static/js/main.fb8cd1ac.chunk.js"
+    "static/js/main.22964ae2.chunk.js"
   ]
 }
