@@ -10,6 +10,7 @@ import ShippingAddressPage from './pages/ShippingAddressPage'
 import PlaceOrderPage from './pages/PlaceOrderPage'
 import OrderPage from './pages/OrderPage'
 import SearchPage from './pages/SearchPage'
+import ErrorPage from './pages/ErrorPage'
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
               component={ProductPage}
             />
             <Route exact path="/" component={HomePage} />
+            <Route path="*" component={ErrorPage} />
           </Switch>
         </main>
       </div>
