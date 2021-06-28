@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react'
 import { Container, Row, Col, Button, Card, ListGroup } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useLocation, useParams } from 'react-router-dom'
+import { Link, useHistory, useLocation, useParams } from 'react-router-dom'
 import { addToCart, removeFromCart } from '../actions/cartActions'
 import { useQuery } from '../helpers'
 
 export default function CartPage() {
   const { id: productId } = useParams()
+  const history = useHistory()
   const cart = useSelector((state) => state.cart)
   const { cartItems } = cart
 
@@ -26,7 +27,7 @@ export default function CartPage() {
   }
 
   const checkoutHandler = () => {
-    // ir para pagina de envio
+    history.push('/shipping')
   }
 
   return (
