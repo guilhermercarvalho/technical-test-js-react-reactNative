@@ -8,6 +8,7 @@ import ProductPage from './pages/ProductPage'
 import CartPage from './pages/CartPage'
 import ShippingAddressPage from './pages/ShippingAddressPage'
 import PlaceOrderPage from './pages/PlaceOrderPage'
+import OrderPage from './pages/OrderPage'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 
         <main>
           <Switch>
+            <Route sensitive path="/order/:id" component={OrderPage} />
             <Route
               exact
               sensitive
