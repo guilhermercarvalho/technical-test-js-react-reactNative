@@ -39,7 +39,7 @@ export default function OrderPage() {
   const handleShow = () => setShow(true)
 
   let order
-  if (orders.length > 1) {
+  if (orders.length > 0) {
     order = orders.find((o) => o.id === Number(orderId))
   }
 
