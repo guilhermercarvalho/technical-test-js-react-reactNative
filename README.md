@@ -41,7 +41,7 @@ Tecnologias utilizadas, informações adicionais e guia de instalação e execu�
 
 ### Informações Adicionais
 
-Como o projeto não faz uso de banco de dados todas os dados da interação do usuário são armazenados utilizando *local storage*.
+Como o projeto não faz uso de banco de dados todas os dados da interação do usuário são armazenados utilizando *local storage*. Também possível acessar a aplicação pelo [GitHub Pages](https://guilhermercarvalho.github.io/technical-test-js-react-reactNative/#/).
 
 
 ### Instalação e Execução
