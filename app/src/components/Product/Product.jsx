@@ -21,7 +21,7 @@ export default function Product({ product }) {
         <Card border={border} style={{ width: '18rem' }}>
           <Card.Img
             variant="top"
-            src={`${window.location.origin}/images/${product.image}`}
+            src={`${process.env.PUBLIC_URL}/images/${product.image}`}
           />
           <div className="text-center">Score: {product.score}</div>
           <Card.Body>

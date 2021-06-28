@@ -52,7 +52,7 @@ export default function ProductPage() {
                     <Card.Img
                       className="rounded"
                       variant="top"
-                      src={`${window.location.origin}/images/${product.image}`}
+                      src={`${process.env.PUBLIC_URL}/images/${product.image}`}
                     />
                     <Card.Title>{product.name}</Card.Title>
                     <Card.Text>

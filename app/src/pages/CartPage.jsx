@@ -60,7 +60,7 @@ export default function CartPage() {
                         <Row className="mx-md-n5">
                           <Col className="px-md-5">
                             <img
-                              src={`${window.location.origin}/images/${item.image}`}
+                              src={`${process.env.PUBLIC_URL}/images/${item.image}`}
                               alt={item.name}
                               style={{ maxHeight: 'auto', maxWidth: '50px' }}
                             />

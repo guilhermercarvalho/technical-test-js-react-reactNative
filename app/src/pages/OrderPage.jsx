@@ -83,7 +83,7 @@ export default function OrderPage() {
                               <Row>
                                 <Col>
                                   <img
-                                    src={`${window.location.origin}/images/${item.image}`}
+                                    src={`${process.env.PUBLIC_URL}/images/${item.image}`}
                                     alt={item.name}
                                     style={{
                                       maxHeight: 'auto',
