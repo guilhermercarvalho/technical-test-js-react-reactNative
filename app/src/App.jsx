@@ -5,6 +5,7 @@ import Navigation from './components/Navigation'
 
 import HomePage from './pages/HomePage'
 import ProductPage from './pages/ProductPage'
+import CartPage from './pages/CartPage'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               path="/product/:id"
               component={ProductPage}
             />
+            <Route exact sensitive path="/cart/:id?" component={CartPage} />
             <Route exact path="/" component={HomePage} />
           </Switch>
         </main>

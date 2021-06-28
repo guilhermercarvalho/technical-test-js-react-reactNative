@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router'
+import { useHistory } from 'react-router-dom'
 import { Button, Container, Row, Col, Card, ListGroup } from 'react-bootstrap'
 import { detailsProduct } from '../actions/productActions'
 import { loadContent } from '../helpers'
 
 export default function ProductPage() {
   const { id: productId } = useParams()
+
+  const history = useHistory()
 
   const productDetails = useSelector((state) => state.productDetails)
   const { loading, error, product } = productDetails
@@ -18,7 +21,7 @@ export default function ProductPage() {
   }, [dispatch, productId])
 
   const addToCardHandler = () => {
-    // addicionar ao carrinho
+    history.push(`/cart/${productId}?qty=${1}`)
   }
 
   let border
